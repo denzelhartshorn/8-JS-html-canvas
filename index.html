@@ -6,7 +6,15 @@
   </head>
   <body>
     <canvas id="draw" width="800" height="800"></canvas>
-    <script></script>
+    <script>
+      const canvas = document.querySelector("#draw");
+      const ctx = canvas.getContext("2d");
+      canvas.width = windwo.innerWidth;
+      canvas.height = windwo.innerHeight;
+      ctx.storkeStyle = "#BADA55";
+      crx.lineJoin = "round";
+      ctx.lineCap = "round";
+    </script>
 
     <style>
       html,
